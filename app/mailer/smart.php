@@ -13,7 +13,7 @@ $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.mail.ru';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'musica.mailer@bk.ru';                 // Наш логин
-$mail->Password = 'Ovegin67';                           // Наш пароль от ящика
+$mail->Password = '';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
 $mail->setFrom('musica.mailer@bk.ru', 'Music-A');   // От кого письмо 
