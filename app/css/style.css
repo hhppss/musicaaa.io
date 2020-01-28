@@ -47,7 +47,7 @@ h2 {
   background: url("../img/header-bg.jpg"), #222222 50% 50% no-repeat;
   background-size: cover;
   width: 100%;
-  min-height: 470px; }
+  min-height: 420px; }
   .header-logo {
     margin-top: 20px; }
     .header-logo a, .header-logo img {
@@ -205,18 +205,29 @@ h2 {
 .acoustics {
   background-color: #222222;
   min-height: 300px;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 10px; }
   .acoustics-title {
     color: #ffffff; }
-  .acoustics-text, .acoustics-slider {
+  .acoustics-content {
     min-height: 200px;
-    margin: 20px 0 40px 0;
+    margin: 20px 0 50px 0;
     border-radius: 15px;
     background-color: #f8f8f8; }
+  .acoustics-text {
+    padding: 20px; }
+    .acoustics-text h5 {
+      font-family: "Montserrat Bold";
+      text-align: center;
+      letter-spacing: 1.3px;
+      margin-bottom: 20px; }
+    .acoustics-text h6 {
+      font-family: "Montserrat Bold";
+      padding-bottom: 15px; }
   .acoustics-slider img {
     max-width: 500px;
     width: 80%;
-    margin: 7% auto; }
+    margin: 70px auto 10px auto; }
   .acoustics-text__item {
     padding: 10%;
     font-family: "Montserrat Regular"; }
@@ -245,6 +256,7 @@ h2 {
       font-size: 16px;
       border-radius: 5px; }
     .order-form input {
+      display: inline-block !important;
       max-width: 500px;
       padding: 10px;
       border: 2px solid #f9ad4a; }
@@ -344,11 +356,13 @@ h2 {
       margin: 3px;
       cursor: pointer; }
   .show {
-    display: block; } }
+    display: block; }
+  .acoustics-slider img {
+    margin-top: 0px; } }
 
 @media only screen and (max-width: 426px) {
   .header {
-    max-height: 450px; }
+    max-height: 350px; }
   .header-title p {
     font-size: 28px; }
   .header-title {

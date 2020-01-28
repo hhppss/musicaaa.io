@@ -9,15 +9,16 @@ $mail->CharSet = 'utf-8';
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
-$mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.mail.ru';  // Specify main and backup SMTP servers
+$mail->isSMTP();   
+$mail->SMTPDebug = 1;                                   // Set mailer to use SMTP
+$mail->Host = 'ssl://smtp.mail.ru';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'musica.mailer@bk.ru';                 // Наш логин
+$mail->Username = 'musica.mailer@mail.ru';                 // Наш логин
 $mail->Password = 'Ovegin67';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
-$mail->setFrom('musica.mailer@bk.ru', 'Music-A');   // От кого письмо 
-$mail->addAddress('rybkino-baza@yandex.ru');     // Add a recipient
+$mail->setFrom('musica.mailer@mail.ru', 'Music-A');   // От кого письмо 
+$mail->addAddress('wo.tank2015@yandex.ru');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -33,12 +34,5 @@ $mail->Body    = '
 	Почта: ' . $email . ' <br>
 	Телефон: ' . $phone . '';
 $mail->AltBody = 'Это альтернативный текст';
-
-if(!$mail->send()) {
-    return false;
-} else {
-		header ('location: ../index.html');
-    return true;
-}
-
+header ('location: ../index.html');
 ?>

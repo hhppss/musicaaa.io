@@ -65,7 +65,7 @@ h2
 	background: url('../img/header-bg.jpg'), $color-black 50% 50% no-repeat
 	background-size: cover
 	width: 100%
-	min-height: 470px
+	min-height: 420px
 	&-logo
 		margin-top: 20px
 		a, img
@@ -225,18 +225,29 @@ h2
 	background-color: $color-black
 	min-height: 300px
 	width: 100%
+	padding-bottom: 10px
 	&-title
 		color: $color-white
-	&-text, &-slider
+	&-content
 		min-height: 200px
-		margin: 20px 0 40px 0
+		margin: 20px 0 50px 0
 		border-radius: 15px
 		background-color: $color-general-bg-light
+	&-text 
+		padding: 20px
+		h5
+			+MontB
+			text-align: center
+			letter-spacing: 1.3px
+			margin-bottom: 20px
+		h6 
+			+MontB
+			padding-bottom: 15px
 	&-slider
 		img
 			max-width: 500px
 			width: 80%
-			margin: 7% auto
+			margin: 70px auto 10px auto
 	&-text
 		&__item
 			padding: 10%
@@ -265,6 +276,7 @@ h2
 			font-size: 16px
 			border-radius: 5px
 		input 
+			display: inline-block !important
 			max-width: 500px
 			padding: 10px
 			border: 2px solid $color-item
@@ -396,9 +408,12 @@ h2
 		background: #222
 	.show
 		display: block
+	.acoustics-slider
+		img
+			margin-top: 0px
 @media only screen and (max-width: 426px)
 	.header
-		max-height: 450px
+		max-height: 350px
 	.header-title p
 		font-size: 28px
 	.header-title 
