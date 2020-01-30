@@ -75,10 +75,11 @@ h2 {
       background-color: #f9ad4a;
       color: #222222;
       border: none;
-      border-radius: 10px;
+      border-radius: 15px;
       -webkit-transform: .5s;
       transition-duration: .5s;
       outline: 0 !important;
+      font-size: 14px;
       padding: 10px 15px; }
       .header-btn a:active {
         transform: translateY(3px); }
@@ -189,17 +190,17 @@ h2 {
       font-size: 26px; }
     .jhlpay-flex__button {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: wrap;
       margin-bottom: 50px;
       outline: none !important; }
     .jhlpay-flex a {
-      width: 250px;
-      height: 50px;
+      width: 270px;
+      height: 40px;
       text-align: center;
-      padding: 10px 0;
+      line-height: 23px;
       margin-bottom: 10px;
-      border-radius: 15px;
+      border-radius: 25px;
       border: 2px solid #8d8d8d; }
 
 .acoustics {
@@ -336,10 +337,21 @@ h2 {
     font-size: 52px; } }
 
 @media only screen and (max-width: 767px) {
+  .header-btn {
+    display: flex;
+    justify-content: center; }
+    .header-btn a {
+      width: 154px;
+      height: 35px;
+      font-size: 14px;
+      line-height: 14px; }
   .advantaged-item__text {
     text-align: left; }
   .jhlpay-flex h2 {
     text-align: center; }
+  .jhlpay-flex a {
+    width: 270px;
+    height: 40px; }
   .line {
     display: none; }
   .line-mobile img {
@@ -368,10 +380,6 @@ h2 {
   .header-title {
     line-height: 35px;
     margin-top: 45px; }
-  .header-btn a {
-    text-align: center;
-    font-size: 14px;
-    border-radius: 5px; }
   .information-title {
     font-size: 24px; }
   .information-text {
