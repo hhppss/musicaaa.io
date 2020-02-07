@@ -1,11 +1,9 @@
 @import "_fonts.sass"
-
 $color-item:      				#f9ad4a
 $color-white:     				#ffffff
 $color-black:							#222222
 $color-general-bg-light: #f8f8f8
 $color-text__light:				#8d8d8d
-
 =MontSB()
 	font-family: "Montserrat SemiBold" 
 =MontB()
@@ -18,12 +16,10 @@ a
 	&:hover
 		color: white
 		text-decoration: none 
-
 *
 	outline: none !important
 	+MontR
 	font-size: 16px
-
 .line img
 	width: 100%
 	max-width: 1440px
@@ -38,9 +34,6 @@ h2
 	margin: 30px 0px 30px 0px
 	font-size: 29px
 	+MontB
-
-	
-
 =button-style()
 	letter-spacing: 1px
 	font-size: 16px 
@@ -49,7 +42,7 @@ h2
 	background-color: $color-item
 	color: $color-black
 	border: none
-	border-radius: 15px
+	border-radius: 5px
 	-webkit-transform: .5s
 	transition-duration: .5s
 	outline: 0 !important
@@ -57,10 +50,6 @@ h2
 		transform: translateY(3px)
 	&:focus
 		outline: none
-////I			Голова сайта
-////I		 Родитель .header
-////I		
-
 .header 
 	background: url('../img/header-bg.jpg'), $color-black 50% 50% no-repeat
 	background-size: cover
@@ -71,18 +60,14 @@ h2
 		a, img
 			width: 25%
 			max-width: 100px
-		&__phone
-			border: 1px solid $color-text__light
-			padding: 1px 10px
-			border-radius: 10px
-			margin-top: -2px
 	&-title 
 		margin-top: 160px
 		line-height: 82px
-		p
+		h1
+			+MontB
 			color: $color-white
-			font-size: 72px
-			letter-spacing: 2px	
+			font-size: 68px
+			letter-spacing: 2.5px	
 	&-btn
 		margin: 60px 0 90px 0 
 		a
@@ -118,7 +103,7 @@ h2
 
 .advantaged 
 	background-color: $color-white
-	min-height: 865px
+	min-height: 800px
 	width: 100%
 	&-title
 		font-size: 29px
@@ -139,7 +124,7 @@ h2
 			display: inline
 			max-width: 555px
 			width: 98%
-			border-radius: 15px
+			border-radius: 5px
 			box-shadow: 2px 2px 40px $color-text__light
 		&__text
 			color: $color-black
@@ -162,11 +147,11 @@ h2
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/jhl1969.jpg')
 	&-block
 		width: 100%
-		max-width: 500px
+		max-width: 550px
 		min-height: 200px
 		margin: 20px auto 20px auto
 		background-color: rgba(34, 34, 34, 0.7)
-		border-radius: 20px
+		border-radius: 5px
 	&-title
 		padding-top: 20px
 		color: $color-white
@@ -189,7 +174,7 @@ h2
 		display: flex
 		flex-direction: row
 		flex-wrap: wrap
-		justify-content: center
+		justify-content: space-between
 		margin-top: 50px
 		color: $color-text__light
 		img
@@ -209,7 +194,7 @@ h2
 			font-size: 26px
 		&__button
 			display: flex
-			justify-content: space-between
+			justify-content: center
 			flex-wrap: wrap
 			margin-bottom: 50px
 			outline: none !important
@@ -218,10 +203,9 @@ h2
 			height: 40px
 			text-align: center
 			line-height: 23px
-			margin-bottom: 10px
+			margin: 5px 
 			border-radius: 25px
 			border: 2px solid $color-text__light
-
 .acoustics
 	background-color: $color-black
 	min-height: 300px
@@ -245,10 +229,7 @@ h2
 			+MontB
 			padding-bottom: 15px
 	&-slider
-		img
-			max-width: 500px
-			width: 80%
-			margin: 70px auto 10px auto
+		margin: 70px 20px 10px auto
 	&-text
 		&__item
 			padding: 10%
@@ -383,8 +364,12 @@ h2
 			letter-spacing: 0.8px
 	.header-title p
 		font-size: 52px
+	.advantaged 
+		min-height: 600px
 
 @media only screen and (max-width: 767px)
+	.header-title h1
+		font-size: 48px
 	.header-btn 
 		display: flex
 		justify-content: center
@@ -402,6 +387,8 @@ h2
 			a 
 				width: 270px
 				height: 40px
+		&__fotorama
+			max-width: 290px
 	.line
 		display: none
 	.line-mobile img
@@ -420,13 +407,18 @@ h2
 		background: #222
 	.show
 		display: block
+	.jhlpay__fotorama
+		margin: 0 auto
 	.acoustics-slider
+		display: flex
+		justify-content: center
+		margin: 20px auto
 		img
 			margin-top: 0px
 @media only screen and (max-width: 426px)
 	.header
 		max-height: 350px
-	.header-title p
+	.header-title h1
 		font-size: 28px
 	.header-title 
 		line-height: 35px

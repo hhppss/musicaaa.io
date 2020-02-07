@@ -53,18 +53,14 @@ h2 {
     .header-logo a, .header-logo img {
       width: 25%;
       max-width: 100px; }
-    .header-logo__phone {
-      border: 1px solid #8d8d8d;
-      padding: 1px 10px;
-      border-radius: 10px;
-      margin-top: -2px; }
   .header-title {
     margin-top: 160px;
     line-height: 82px; }
-    .header-title p {
+    .header-title h1 {
+      font-family: "Montserrat Bold";
       color: #ffffff;
-      font-size: 72px;
-      letter-spacing: 2px; }
+      font-size: 68px;
+      letter-spacing: 2.5px; }
   .header-btn {
     margin: 60px 0 90px 0; }
     .header-btn a {
@@ -75,7 +71,7 @@ h2 {
       background-color: #f9ad4a;
       color: #222222;
       border: none;
-      border-radius: 15px;
+      border-radius: 5px;
       -webkit-transform: .5s;
       transition-duration: .5s;
       outline: 0 !important;
@@ -106,7 +102,7 @@ h2 {
 
 .advantaged {
   background-color: #ffffff;
-  min-height: 865px;
+  min-height: 800px;
   width: 100%; }
   .advantaged-title {
     font-size: 29px;
@@ -127,7 +123,7 @@ h2 {
       display: inline;
       max-width: 555px;
       width: 98%;
-      border-radius: 15px;
+      border-radius: 5px;
       box-shadow: 2px 2px 40px #8d8d8d; }
     .advantaged-item__text, .advantaged-item-2__text {
       color: #222222; }
@@ -147,11 +143,11 @@ h2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/jhl1969.jpg"); }
   .spec-block {
     width: 100%;
-    max-width: 500px;
+    max-width: 550px;
     min-height: 200px;
     margin: 20px auto 20px auto;
     background-color: rgba(34, 34, 34, 0.7);
-    border-radius: 20px; }
+    border-radius: 5px; }
   .spec-title {
     padding-top: 20px;
     color: #ffffff; }
@@ -170,7 +166,7 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 50px;
     color: #8d8d8d; }
     .jhlpay-flex img {
@@ -190,7 +186,7 @@ h2 {
       font-size: 26px; }
     .jhlpay-flex__button {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       flex-wrap: wrap;
       margin-bottom: 50px;
       outline: none !important; }
@@ -199,7 +195,7 @@ h2 {
       height: 40px;
       text-align: center;
       line-height: 23px;
-      margin-bottom: 10px;
+      margin: 5px;
       border-radius: 25px;
       border: 2px solid #8d8d8d; }
 
@@ -225,10 +221,8 @@ h2 {
     .acoustics-text h6 {
       font-family: "Montserrat Bold";
       padding-bottom: 15px; }
-  .acoustics-slider img {
-    max-width: 500px;
-    width: 80%;
-    margin: 70px auto 10px auto; }
+  .acoustics-slider {
+    margin: 70px 20px 10px auto; }
   .acoustics-text__item {
     padding: 10%;
     font-family: "Montserrat Regular"; }
@@ -334,9 +328,13 @@ h2 {
   .advantaged-item__text p {
     letter-spacing: 0.8px; }
   .header-title p {
-    font-size: 52px; } }
+    font-size: 52px; }
+  .advantaged {
+    min-height: 600px; } }
 
 @media only screen and (max-width: 767px) {
+  .header-title h1 {
+    font-size: 48px; }
   .header-btn {
     display: flex;
     justify-content: center; }
@@ -352,6 +350,8 @@ h2 {
   .jhlpay-flex a {
     width: 270px;
     height: 40px; }
+  .jhlpay__fotorama {
+    max-width: 290px; }
   .line {
     display: none; }
   .line-mobile img {
@@ -369,13 +369,19 @@ h2 {
       cursor: pointer; }
   .show {
     display: block; }
-  .acoustics-slider img {
-    margin-top: 0px; } }
+  .jhlpay__fotorama {
+    margin: 0 auto; }
+  .acoustics-slider {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto; }
+    .acoustics-slider img {
+      margin-top: 0px; } }
 
 @media only screen and (max-width: 426px) {
   .header {
     max-height: 350px; }
-  .header-title p {
+  .header-title h1 {
     font-size: 28px; }
   .header-title {
     line-height: 35px;
