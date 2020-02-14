@@ -168,7 +168,8 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 50px;
-    color: #8d8d8d; }
+    color: #8d8d8d;
+    text-align: center; }
     .jhlpay-flex img {
       max-width: 400px;
       width: 100%;
@@ -179,7 +180,6 @@ h2 {
       line-height: 1.5;
       letter-spacing: 1px; }
     .jhlpay-flex h3 {
-      text-align: left;
       margin: 20px 0 40px 0px; }
     .jhlpay-flex span {
       font-weight: 600;
