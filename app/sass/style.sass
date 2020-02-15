@@ -43,8 +43,8 @@ h2
 	color: $color-black
 	border: none
 	border-radius: 5px
-	-webkit-transform: .5s
-	transition-duration: .5s
+	-webkit-transform: .2s
+	transition-duration: .2s
 	outline: 0 !important
 	&:active
 		transform: translateY(3px)
@@ -76,8 +76,8 @@ h2
 			padding: 10px 15px
 			&:hover
 				background-color: $color-white
-				-webkit-transform: .5s
-				transition-duration: .5s
+				-webkit-transform: .2s
+				transition-duration: .2s
 		img
 			margin-left: 10px
 			width: 15%
@@ -130,8 +130,6 @@ h2
 			color: $color-black
 			h2
 				margin-bottom: 30px
-				font-size: 29px
-				+MontB
 			p
 				letter-spacing: 1.2px
 
@@ -182,8 +180,6 @@ h2
 			max-width: 400px
 			width: 100%
 			margin-bottom: 20px
-		h2
-			font-size: 29px
 		p
 			line-height: 1.5
 			letter-spacing: 1px
@@ -197,7 +193,7 @@ h2
 			justify-content: center
 			flex-wrap: wrap
 			margin-bottom: 50px
-			outline: none !important
+			outline: none !important 
 		a
 			width: 270px
 			height: 40px
@@ -205,7 +201,10 @@ h2
 			line-height: 23px
 			margin: 5px 
 			border-radius: 25px
-			border: 2px solid $color-text__light
+			border: 2px solid $color-item
+			&:hover
+				border: 2px solid $color-black
+				box-shadow: 0px 0px 5px $color-general-bg-light
 .acoustics
 	background-color: $color-black
 	min-height: 300px
@@ -234,6 +233,29 @@ h2
 		&__item
 			padding: 10%
 			+MontR
+.excellence
+	background-color: $color-black
+	color: $color-white
+	text-align: center
+	&-list
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		flex-wrap: wrap
+	&-item
+		width: 320px
+		margin: 15px auto
+		padding: 10px
+		img 
+			width: 70px
+			height: 70px
+			margin-bottom: 25px
+			filter: invert(1)
+		h3 
+			font-size: 1.3rem
+			+MontB()
+		p 
+			font-size: 1rem
 .order 
 	background-image: url(../img/musica-bg.jpg)
 	background-attachment: fixed
@@ -262,6 +284,12 @@ h2
 			max-width: 500px
 			padding: 10px
 			border: 2px solid $color-item
+			-webkit-transition: 0.2s
+			transition: 0.2s
+			&:focus
+				border: 2px solid $color-black
+				-webkit-transition: 0.2s
+				transition: 0.2s
 		button
 			max-width: 190px
 			height: 35px
@@ -314,6 +342,7 @@ h2
 		max-width: 100%
 		max-height: 300px
 		margin-bottom: 20px
+		border-radius: 15px
 	&-icon
 		width: 50%
 		max-width: 400px

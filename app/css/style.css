@@ -72,8 +72,8 @@ h2 {
       color: #222222;
       border: none;
       border-radius: 5px;
-      -webkit-transform: .5s;
-      transition-duration: .5s;
+      -webkit-transform: .2s;
+      transition-duration: .2s;
       outline: 0 !important;
       font-size: 14px;
       padding: 10px 15px; }
@@ -83,8 +83,8 @@ h2 {
         outline: none; }
       .header-btn a:hover {
         background-color: #ffffff;
-        -webkit-transform: .5s;
-        transition-duration: .5s; }
+        -webkit-transform: .2s;
+        transition-duration: .2s; }
     .header-btn img {
       margin-left: 10px;
       width: 15%; }
@@ -128,9 +128,7 @@ h2 {
     .advantaged-item__text, .advantaged-item-2__text {
       color: #222222; }
       .advantaged-item__text h2, .advantaged-item-2__text h2 {
-        margin-bottom: 30px;
-        font-size: 29px;
-        font-family: "Montserrat Bold"; }
+        margin-bottom: 30px; }
       .advantaged-item__text p, .advantaged-item-2__text p {
         letter-spacing: 1.2px; }
 
@@ -174,8 +172,6 @@ h2 {
       max-width: 400px;
       width: 100%;
       margin-bottom: 20px; }
-    .jhlpay-flex h2 {
-      font-size: 29px; }
     .jhlpay-flex p {
       line-height: 1.5;
       letter-spacing: 1px; }
@@ -197,7 +193,10 @@ h2 {
       line-height: 23px;
       margin: 5px;
       border-radius: 25px;
-      border: 2px solid #8d8d8d; }
+      border: 2px solid #f9ad4a; }
+      .jhlpay-flex a:hover {
+        border: 2px solid #222222;
+        box-shadow: 0px 0px 5px #f8f8f8; }
 
 .acoustics {
   background-color: #222222;
@@ -227,6 +226,30 @@ h2 {
     padding: 10%;
     font-family: "Montserrat Regular"; }
 
+.excellence {
+  background-color: #222222;
+  color: #ffffff;
+  text-align: center; }
+  .excellence-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .excellence-item {
+    width: 320px;
+    margin: 15px auto;
+    padding: 10px; }
+    .excellence-item img {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 25px;
+      filter: invert(1); }
+    .excellence-item h3 {
+      font-size: 1.3rem;
+      font-family: "Montserrat Bold"; }
+    .excellence-item p {
+      font-size: 1rem; }
+
 .order {
   background-image: url(../img/musica-bg.jpg);
   background-attachment: fixed;
@@ -254,7 +277,13 @@ h2 {
       display: inline-block !important;
       max-width: 500px;
       padding: 10px;
-      border: 2px solid #f9ad4a; }
+      border: 2px solid #f9ad4a;
+      -webkit-transition: 0.2s;
+      transition: 0.2s; }
+      .order-form input:focus {
+        border: 2px solid #222222;
+        -webkit-transition: 0.2s;
+        transition: 0.2s; }
     .order-form button {
       max-width: 190px;
       height: 35px;
@@ -307,7 +336,8 @@ h2 {
   .map iframe {
     max-width: 100%;
     max-height: 300px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    border-radius: 15px; }
   .map-icon {
     width: 50%;
     max-width: 400px;
