@@ -67,8 +67,13 @@ h2
 		h1
 			+MontB
 			color: $color-white
-			font-size: 68px
+			font-size: 58px
 			letter-spacing: 2.5px	
+		span 
+			+MontB
+			color: $color-white
+			font-size: 36px
+			letter-spacing: 2.5px
 	&-btn
 		margin: 60px 0 90px 0 
 		a
@@ -395,8 +400,11 @@ h2
 		min-height: 600px
 
 @media only screen and (max-width: 767px)
-	.header-title h1
-		font-size: 48px
+	.header-title 
+		h1
+			font-size: 48px
+		span
+			font-size: 24px
 	.header-btn 
 		display: flex
 		justify-content: center
@@ -445,11 +453,13 @@ h2
 @media only screen and (max-width: 426px)
 	.header
 		max-height: 350px
+		&-btn
+			margin: 50px 0 45px 0
 	.header-title h1
 		font-size: 28px
 	.header-title 
 		line-height: 35px
-		margin-top: 45px
+		margin-top: 65px
 	.information-title
 		font-size: 24px
 	.information-text
@@ -488,5 +498,6 @@ h2
 @media only screen and (max-width: 360px)
 	.header-title 
 		padding-bottom: 20px
-		h1
+		h1, span
+			line-height: 27px
 			font-size: 22px	
