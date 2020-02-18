@@ -44,7 +44,7 @@ h2 {
   font-family: "Montserrat Bold"; }
 
 .header {
-  background: url("../img/header-bg.jpg"), #222222 50% 50% no-repeat;
+  background: linear-gradient(90deg, rgba(4, 0, 0, 0.7) 0%, #110202bd 35%, rgba(20, 0, 0, 0.7) 100%), url("../img/header-bg.jpg"), #222222 50% 50% no-repeat;
   background-size: cover;
   width: 100%;
   min-height: 420px; }
