@@ -64,8 +64,9 @@ h2 {
     .header-title span {
       font-family: "Montserrat Bold";
       color: #ffffff;
-      font-size: 36px;
-      letter-spacing: 2.5px; }
+      font-size: 28px;
+      letter-spacing: 2.5px;
+      line-height: 10px; }
   .header-btn {
     margin: 60px 0 90px 0; }
     .header-btn a {
@@ -254,7 +255,7 @@ h2 {
       font-size: 1.3rem;
       font-family: "Montserrat Bold"; }
     .excellence-item p {
-      font-size: 1rem; }
+      font-size: 0.8rem; }
 
 .order {
   background-image: url(../img/musica-bg.jpg);
@@ -433,6 +434,8 @@ h2 {
       margin: 50px 0 45px 0; }
   .header-title h1 {
     font-size: 28px; }
+  .header-title span {
+    font-size: 18px; }
   .header-title {
     line-height: 35px;
     margin-top: 65px; }
@@ -473,6 +476,8 @@ h2 {
 @media only screen and (max-width: 360px) {
   .header-title {
     padding-bottom: 20px; }
-    .header-title h1, .header-title span {
+    .header-title h1 {
       line-height: 27px;
-      font-size: 22px; } }
+      font-size: 22px; }
+    .header-title span {
+      font-size: 16px; } }
